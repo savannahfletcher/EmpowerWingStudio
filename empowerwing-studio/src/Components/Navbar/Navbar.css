@@ -20,11 +20,9 @@
 }
 
 
-/* <button class="button-74" role="button">Button 74</button> */
-
-
-.button-74 {
-  background-color: #fbeee0;
+/* Button CSS from https://getcssscan.com/css-buttons-examples */
+.button {
+  background-color: #fcefdc;
   border: 2px solid #422800;
   border-radius: 30px;
   box-shadow: #422800 4px 4px 0 0;
@@ -42,17 +40,17 @@
   touch-action: manipulation;
 }
 
-.button-74:hover {
+.button:hover {
   background-color: #fff;
 }
 
-.button-74:active {
+.button:active {
   box-shadow: #422800 2px 2px 0 0;
   transform: translate(2px, 2px);
 }
 
 @media (min-width: 768px) {
-  .button-74 {
+  .button {
     min-width: 120px;
     padding: 0 25px;
   }
