@@ -1,11 +1,15 @@
-import React, { Component, useState } from 'react';
+import React from 'react';
 import "./Feature.css"; 
 
-
-const Feature = () => {
-
+const Feature : React.FC = () => {
     return(
-        <div className="feature">
+        <div className = "feature">
+            <div className="flex-container">
+            <div className="flex-item">c 1</div>
+            <div className="flex-item">c 1</div>
+            <div className="flex-item">c 1</div>
+            </div>
+
         </div>
     )
 };
