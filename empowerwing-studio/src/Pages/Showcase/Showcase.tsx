@@ -1,21 +1,54 @@
 /* import React, { Component, useState } from 'react'; */
 import "./Showcase.css";
-import supabase from "../../config/supabaseClient"
+import { createClient } from '@supabase/supabase-js'
 import { useEffect, useState } from "react";
-import Feature from '../../Components/Feature/Feature'
+import Feature from '../../Components/Feature/Feature';
+
+const supabase = createClient('https://xxwhazdjkktjoklafuio.supabase.co', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh4d2hhemRqa2t0am9rbGFmdWlvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTIzNjQ3MjAsImV4cCI6MjAyNzk0MDcyMH0.kZIu3kBSqPFaCAeOe-6_T6AbwKyyITmU8STbz3O60Cw')
+
+interface User {
+    id: number;
+    name: string;
+    biography: string;
+    link1: string;
+    link2: string;
+    link3: string;
+    created_at: Date;
+  }
 
 const Showcase = () => {
-    console.log(supabase)
-    
-    return(
-        <div className="showcase">
-            <header className="showcase-header">
+    const [users, setUsers] = useState<User[] | null>(null);
 
-            {/* For each of the features (get from backend), use the Feature Component*/}
-            <Feature></Feature>
-            </header>
+	useEffect(() => {
+		loadUsers();
+	}, []);
+
+	// Get all data from the todos table
+	const loadUsers = async () => {
+		let { data, error } = await supabase
+			.from('users')
+			.select();
+
+        if (error) {
+            console.error("Error loading users", error);
+            return;
+        }
+
+        console.log('Fetched data:', data);
+        setUsers(data);
+	};
+
+    return (
+		<div className="showcase">
+            {users && (
+                <div className="users">
+                    {users.map(user => (
+                        <Feature key={user.id} user={user}/>
+                    ))}
+                </div>
+            )}
         </div>
-    )
-};
+	);
+}
 
 export default Showcase; 
