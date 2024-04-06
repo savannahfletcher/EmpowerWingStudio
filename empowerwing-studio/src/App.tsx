@@ -15,13 +15,12 @@ function App() {
         <Navbar></Navbar>
         <Routes>
           <Route path="/" element={ <Showcase/> }></Route>
-          <Route path="/home" element={ <Apply/> }></Route>
+          <Route path="/apply" element={ <Apply/> }></Route>
           <Route path="/about" element={ <About/> }></Route>
 
         </Routes>
       </Router>
       
-      <Feature></Feature>
       <header className="App-header">
         <p>
           See our featured artists!
