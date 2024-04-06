@@ -1,10 +1,8 @@
 .navbar {
     background: #c6618b;
     height: 100px; 
-    width: 100%; 
     display: flex; 
-    
-    justify-content: space-between; 
+    /* justify-content: space-between;  */
     padding: 0.5rem calc((100vw - 1000px) / 2);
     z-index: 10; 
 }
@@ -13,22 +11,49 @@
     color: #fff; 
     display: flex; 
     align-items: center; 
-    text-align: center;
+    font-family: 'Courier New';
+    font-size: 25px;
     text-decoration: none;
-    padding: 0 1 rem; 
+    padding: 0 1rem;
     height: 100%; 
     cursor: pointer; 
 }
 
-/* .button { 
-    border-radius: 4px; 
-    background: #2290ff; 
-    padding: 10px 22px; 
-    color: #000; 
-    transition: all 0.2s ease-in-out; 
-    border: none; 
-    outline: none; 
-    cursor: pointer; 
-    text-decoration: none; 
-    margin-left: 24px; 
-} */
+
+/* <button class="button-74" role="button">Button 74</button> */
+
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
