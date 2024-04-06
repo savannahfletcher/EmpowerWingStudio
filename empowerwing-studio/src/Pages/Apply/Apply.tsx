@@ -59,7 +59,12 @@ const Apply = () => {
                             </div>
 
                             <p></p>
-
+                            <div className="button-box">
+                            <input type="button" value="Submit" style={{ fontWeight: 700 }} />
+                                <label htmlFor="button"></label>
+                            </div>
+                            <p></p>
+                            
                         </div>
                     </div>
                 </div>

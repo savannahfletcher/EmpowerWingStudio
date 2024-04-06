@@ -83,7 +83,7 @@
     justify-content: center;
 }
 
-/* File upload button, inspired by: https://codepen.io/sowg/pen/qBXexaZ */
+/* File upload button & submit button, inspired by: https://codepen.io/sowg/pen/qBXexaZ */
 input[type=file] {
     display: none;
 }
@@ -105,6 +105,32 @@ label[for=file] {
 label[for=file]:hover,
 label[for=file]:focus,
 label[for=file]:active {
+    background: #c6618b;
+    color: #fff;
+}
+
+.button-box{
+    display: flex;
+    justify-content: center;
+}
+
+input[type=button] {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    width: 30vh;
+    color: #c6618b;
+    border: 3px solid #c6618b;
+    background: hsl(0 0 0/0);
+    padding: .7em 1.2em;
+    color: #c6618b;
+    border-radius: 2em;
+    transition: 1s;
+}
+
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=button]:active {
     background: #c6618b;
     color: #fff;
 }
