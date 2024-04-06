@@ -27,6 +27,8 @@
     min-height: 70vh;
     background-color: #5e3901;
     border-radius: 24px;
+    display:flex;
+    justify-content: center;
 }
 
 .inner-box {

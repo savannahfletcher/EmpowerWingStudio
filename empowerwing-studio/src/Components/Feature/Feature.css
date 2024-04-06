@@ -1,11 +1,8 @@
 .feature {
-    background: #fcefdc;
-    /* height: 100%;  */
     display: flex; 
     justify-content: center;
-    /* padding: 20px;  */
-    /* z-index: 10;  */
     height: 100%;
+    margin: 20px;
 }
 
 .flex-container{
@@ -13,6 +10,7 @@
     margin: auto;
     justify-content: space-between;
     align-items: left;
+    margin: 15px;
 }
 
 .flex-item{

@@ -1,13 +1,15 @@
 import React, { Component, useState } from 'react';
 import "./Apply.css";
 import { Icon } from '@iconify/react';
+import Background from '../../assets/images/dotted_background.png'
 
 
 const Apply = () => {
     return (
         <div className="apply">
-            <header className="apply-header">
-                <p>
+            <header className="apply-header" style={{backgroundImage: `url(${Background})`}}>
+                {/* Update this text once we choose a font */}
+                <p style={{color: '#5e3901', fontWeight: 'bold'}}>
                     Are you an artist, business owner, or creator looking to gain more exposure? Apply here to be featured on our website!
                 </p>
                 <div className='apply-container'>
@@ -61,6 +63,7 @@ const Apply = () => {
                         </div>
                     </div>
                 </div>
+                <p></p>
             </header>
         </div>
     )
