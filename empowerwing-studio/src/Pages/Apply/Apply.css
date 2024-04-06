@@ -1,0 +1,108 @@
+.apply {
+    text-align: center;
+}
+
+.apply-header {
+    background-color: #fcefdc;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: #c6618b;
+}
+
+.apply-container {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+}
+
+.apply-item {
+    flex: 1;
+    margin: 10px;
+    padding: 40px;
+    width: 80vw;
+    min-height: 70vh;
+    background-color: #5e3901;
+    border-radius: 24px;
+}
+
+.inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #fcefdc;
+    border-radius: 24px;
+    width: 80vw;
+    min-height: 70vh;
+    margin: 10px;
+}
+
+/* Input box inspired by: https://uiverse.io/kamehame-ha/lovely-fly-87 */
+.coolinput {
+    display: flex;
+    flex-direction: column;
+    padding: 0 calc((100vw - 1300px) / 2);
+    position: static;
+    max-width: 70vw;
+    margin: 10px;
+
+}
+
+.coolinput label.text {
+    color: #c6618b;
+    font-weight: 700;
+    position: relative;
+    top: 0.5rem;
+    margin: 0 0 0 7px;
+    padding: 0 3px;
+    background: #fcefdc;
+    width: fit-content;
+}
+
+.coolinput input[type=text].input {
+    padding: 11px 10px;
+    font-size: 1.25rem;
+    border: 3px #c6618b solid;
+    border-radius: 5px;
+    background: #fcefdc;
+    color: #5e3901;
+}
+
+.coolinput input[type=text].input:focus {
+    outline: none;
+    color: #5e3901;
+}
+
+.upload-container{
+    display: flex;
+    justify-content: center;
+}
+
+/* File upload button, inspired by: https://codepen.io/sowg/pen/qBXexaZ */
+input[type=file] {
+    display: none;
+}
+
+label[for=file] {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    width: 30vh;
+    color: #c6618b;
+    border: 3px solid #c6618b;
+    background: hsl(0 0 0/0);
+    padding: .7em 1.2em;
+    color: #c6618b;
+    border-radius: 2em;
+    transition: 1s;
+}
+
+label[for=file]:hover,
+label[for=file]:focus,
+label[for=file]:active {
+    background: #c6618b;
+    color: #fff;
+}

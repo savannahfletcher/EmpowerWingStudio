@@ -1,7 +1,7 @@
 import React from 'react';
 import "./Feature.css"; 
 
-const Feature : React.FC = () => {
+const Feature = () => {
     return(
         <div className = "feature">
             <div className="flex-container">
