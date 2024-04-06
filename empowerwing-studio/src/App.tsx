@@ -5,12 +5,13 @@ import Navbar from './Components/Navbar/Navbar';
 import Showcase from './Pages/Showcase/Showcase'
 import Apply from './Pages/Apply/Apply'
 import About from './Pages/About/About'
-import Feature from './Components/Feature/Feature';
+// import Feature from './Components/Feature/Feature';
 
 
 function App() {
   return (
     <div className="App">
+      {/* <header className='App-header'> */}
       <Router>
         <Navbar></Navbar>
         <Routes>
@@ -20,12 +21,12 @@ function App() {
 
         </Routes>
       </Router>
-      
-      <header className="App-header">
+      {/* </header> */}
+            {/* <header className="App-header">
         <p>
           See our featured artists!
         </p>
-      </header> 
+      </header>  */}
     </div>
   );
 }
