@@ -25,27 +25,29 @@ const Apply = () => {
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        
-        try {
-            const { data, error } = await supabase
-                .from('users')
-                .insert([{ name, biography, link1, link2, link3 }]);
+        if (!(name === '') && !(biography === '') && !(link1 === '')){
+            try {
+                const { data, error } = await supabase
+                    .from('users')
+                    .insert([{ name, biography, link1, link2, link3 }]);
+                    
+                    
+                if (error) {
+                    throw error;
+                }
                 
-            if (error) {
-                throw error;
-            }
+                console.log('Data inserted:', data);
+                // Reset form fields after successful submission
+                setName('');
+                setBio('');
+                setLink1('');
+                setLink2('');
+                setLink3('');
+            } 
             
-            console.log('Data inserted:', data);
-            // Reset form fields after successful submission
-            setName('');
-            setBio('');
-            setLink1('');
-            setLink2('');
-            setLink3('');
-        } 
-        
-        catch (error) {
-            console.error('Error inserting data:', error);
+            catch (error) {
+                console.error('Error inserting data:', error);
+            }
         }
     };
 
