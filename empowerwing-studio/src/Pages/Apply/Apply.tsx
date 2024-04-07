@@ -14,6 +14,7 @@ interface User {
     link2: string;
     link3: string;
     created_at: string;
+    profile_image: string;
 }
 
 const Apply = () => {
@@ -22,14 +23,36 @@ const Apply = () => {
     const [link1, setLink1] = useState('');
     const [link2, setLink2] = useState('');
     const [link3, setLink3] = useState('');
+    const [image, setImage] = useState('');
+    const [profile_image, setProfile] = useState('');
 
     const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+
+        let profileUrl = ""
+
+        if (image) {
+            const { data } = await supabase
+                .storage
+                .from('profilePics')
+                .getPublicUrl('savannahfletcher.png')
+    
+
+            const imageURL = name; // Assuming Key contains the URL
+
+            if (imageURL) {
+                setProfile(name)
+                profileUrl = data.publicUrl
+            }
+        }
+
+
+
         if (!(name === '') && !(biography === '') && !(link1 === '')){
             try {
                 const { data, error } = await supabase
                     .from('users')
-                    .insert([{ name, biography, link1, link2, link3 }]);
+                    .insert([{ name, biography, link1, link2, link3, profile_image: profileUrl}]);
                     
                     
                 if (error) {
@@ -89,7 +112,8 @@ const Apply = () => {
                                 {/* Image Uploads: profile & works */}
                                 <div style={{ fontWeight: 700 }}>Profile Picture:*</div>
                                 <div className='upload-container'>
-                                    <input type="file" id="file" />
+                                    <input type="file" id="file" 
+                                        onChange={e => setImage(e.target.value)} />
                                     <label htmlFor="file"> Upload Files
                                         <Icon icon="ion:cloud-upload-outline" />
                                     </label>
