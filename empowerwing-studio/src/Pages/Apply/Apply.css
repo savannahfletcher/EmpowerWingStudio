@@ -128,9 +128,11 @@ input[type=button] {
     transition: 1s;
 }
 
-input[type=button]:hover,
-input[type=button]:focus,
-input[type=button]:active {
+/*
+input[type=submit]:hover,
+input[type=submit]:focus,
+input[type=submit]:active {
     background: #c6618b;
     color: #fff;
 }
+*/
