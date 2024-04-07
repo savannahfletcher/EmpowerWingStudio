@@ -40,7 +40,9 @@
 .right-box{
     display: flex;
     flex-direction: row;
-    background-color: #5e3901;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #5e3901; */
     width: 48%;
     height: 100%;
 
@@ -58,11 +60,11 @@
 .lower{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     align-items: center;
     margin: 10px;
     width: 100%;
-    height: 48%;
+    min-height: 48%;
 }
 
 .circle {
@@ -89,6 +91,7 @@
 
 .bio-text {
     color: #c6618b;
+    font-size: 25px;
 }
 .link-text {
     font-size: 20px;

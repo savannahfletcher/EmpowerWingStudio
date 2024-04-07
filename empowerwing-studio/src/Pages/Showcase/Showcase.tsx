@@ -15,6 +15,8 @@ interface User {
     link2: string;
     link3: string;
     created_at: Date;
+    profile_image: string;
+    art1: string;
   }
 
 const Showcase = () => {

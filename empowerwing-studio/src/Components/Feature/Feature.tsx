@@ -9,6 +9,8 @@ interface User {
     link2: string;
     link3: string;
     created_at: Date;
+    profile_image: string;
+    art1: string;
 }
 
 interface FeatureProps {
@@ -24,7 +26,7 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
                     <div className="left-box">
                         <div className="upper">
                             <div className="profile-picture">
-                            <img src={require('../../assets/images/default-profile.png')} alt="logo" height='165' />
+                                <img src={user.profile_image} alt="logo" height='165' />
                             </div>
                             <div className='name-text'>{user.name}</div>
                         </div>
@@ -35,7 +37,6 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
                                     {user.link1}
                                 </a>
                             </div>
-
 
                             {user.link2 !== '' &&
                                 <div className='link-text'>
@@ -52,12 +53,12 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
                             }
 
                         </div>
+                        <p></p>
 
                     </div>
                     {/* Right half of feature: artwork images */}
                     <div className="right-box">
-
-
+                        <img src={user.art1} alt="logo" height='300' />
                     </div>
 
                 </div>
@@ -65,5 +66,6 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
         </div>
     )
 };
+
 
 export default Feature; 
