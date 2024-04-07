@@ -23,18 +23,32 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
                     {/* Left half of feature: profile, name, bio */}
                     <div className="left-box">
                         <div className="upper">
-                            <div className="circle"></div>
+                            <div className="profile-picture">
+                            <img src={require('../../assets/images/default-profile.png')} alt="logo" height='165' />
+                            </div>
                             <div className='name-text'>{user.name}</div>
                         </div>
                         <div className="lower">
                             <div className='bio-text'>{user.biography}</div>
-                            <div className='link-text'>{user.link1}</div>
-                            {user.link2 !== '' &&
-                                <div className='link-text'>{user.link2}</div>
+                            <div className='link-text'>
+                                <a href={user.link1} style={{ color: "#7CA871" }}>
+                                    {user.link1}
+                                </a>
+                            </div>
 
+
+                            {user.link2 !== '' &&
+                                <div className='link-text'>
+                                    <a href={user.link2} style={{ color: "#7CA871" }}>
+                                        {user.link2}
+                                    </a></div>
                             }
                             {user.link3 !== '' &&
-                                <div className='link-text'>{user.link3}</div>
+                                <div className='link-text'>
+                                    <a href={user.link3} style={{ color: "#7CA871" }}>
+                                        {user.link3}
+                                    </a>
+                                </div>
                             }
 
                         </div>
