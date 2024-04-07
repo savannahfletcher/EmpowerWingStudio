@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/EmpowerWingStudio/static/css/main.4c0d999a.css",
-    "main.js": "/EmpowerWingStudio/static/js/main.51a81770.js",
+    "main.js": "/EmpowerWingStudio/static/js/main.3bc4ba7c.js",
     "static/js/952.5581c952.chunk.js": "/EmpowerWingStudio/static/js/952.5581c952.chunk.js",
     "static/js/453.1829822c.chunk.js": "/EmpowerWingStudio/static/js/453.1829822c.chunk.js",
     "static/media/savannahAvatar.png": "/EmpowerWingStudio/static/media/savannahAvatar.70ec4de8c01451e59903.png",
@@ -10,12 +10,12 @@
     "static/media/dotted_background.png": "/EmpowerWingStudio/static/media/dotted_background.0a9dbca47f47b071069b.png",
     "index.html": "/EmpowerWingStudio/index.html",
     "main.4c0d999a.css.map": "/EmpowerWingStudio/static/css/main.4c0d999a.css.map",
-    "main.51a81770.js.map": "/EmpowerWingStudio/static/js/main.51a81770.js.map",
+    "main.3bc4ba7c.js.map": "/EmpowerWingStudio/static/js/main.3bc4ba7c.js.map",
     "952.5581c952.chunk.js.map": "/EmpowerWingStudio/static/js/952.5581c952.chunk.js.map",
     "453.1829822c.chunk.js.map": "/EmpowerWingStudio/static/js/453.1829822c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4c0d999a.css",
-    "static/js/main.51a81770.js"
+    "static/js/main.3bc4ba7c.js"
   ]
 }
