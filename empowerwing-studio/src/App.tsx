@@ -11,6 +11,7 @@ import About from './Pages/About/About'
 function App() {
   return (
     <div className="App">
+      <div className="amaranth-regular">
       {/* <header className='App-header'> */}
       <Router>
         <Navbar></Navbar>
@@ -27,6 +28,7 @@ function App() {
           See our featured artists!
         </p>
       </header>  */}
+      </div>
     </div>
   );
 }

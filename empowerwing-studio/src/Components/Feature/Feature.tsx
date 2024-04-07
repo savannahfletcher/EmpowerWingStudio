@@ -20,9 +20,6 @@ const Feature: React.FC<FeatureProps> = ({ user }) => {
         <div className="feature">
             <div className="flex-container">
                 <div className="flex-item">
-                    {/* <h3 style={{color:'white'}}>{user.name}</h3>
-                    <p style={{color:'white'}}>{user.biography}</p>
-                    <p style={{color:'white'}}>{user.link1}</p> */}
                     {/* Left half of feature: profile, name, bio */}
                     <div className="left-box">
                         <div className="upper">

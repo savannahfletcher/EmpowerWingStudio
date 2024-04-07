@@ -1,14 +1,106 @@
-.about{
+.about {
     text-align: center;
 }
 
-.about-header{
+.about-header {
     background-color: #fcefdc;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* justify-content: center; */
     font-size: calc(10px + 2vmin);
     color: #c6618b;
+}
+
+.mission{
+    width: 80vw;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.mission-title{
+    font-weight: 700;
+    font-size: 70px;
+}
+.mission-body{
+    background-color: #fcefdc;
+    border: 2px solid #5e3901;
+    border-radius: 30px;
+    box-shadow: #5e3901 8px 8px 1px 1px;
+    color: #5e3901;
+    font-weight: 600;
+    padding: 20px 45px;
+    line-height: 50px;
+    color: #7CA871;
+    display: flex;
+    margin:10px;
+}
+
+.developer{
+    width: 80vw;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.developer-title{
+    font-weight: 700;
+    font-size: 50px;
+}
+.d-box{
+    width: 80vw;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+}
+
+.desc-box{
+    width: 30vw;
+    min-height: 320px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.upper-box{
+    background-color: #fcefdc;
+    border: 2px solid #5e3901;
+    border-radius: 30px;
+    box-shadow: #5e3901 8px 8px 1px 1px;
+    color: #5e3901;
+    font-weight: 600;
+    width: 30vw;
+    min-height: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.lower-box{
+    width: 30vw;
+    min-height: 160px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.developer-body{
+    font-weight: 700;
+    font-size: 40px;
+    color: #7CA871;
+}
+
+.developer-sub{
+    font-weight: 700;
+    font-size: 30px;
+    color: #7CA871;
 }

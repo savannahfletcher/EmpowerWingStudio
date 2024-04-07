@@ -1,10 +1,16 @@
 .navbar {
     background: #c6618b;
-    height: 100px; 
+    height: 120px; 
     display: flex; 
+    
     /* justify-content: space-between;  */
-    padding: 0.5rem calc((100vw - 1000px) / 2);
+    /* padding: 0.5rem calc((100vw - 1000px) / 2); */
     z-index: 10; 
+}
+
+.navbar-left {
+  width: 20vw;
+  height: 120px;
 }
 
 .links {
