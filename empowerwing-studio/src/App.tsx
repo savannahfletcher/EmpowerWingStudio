@@ -16,9 +16,9 @@ function App() {
       <Router>
         <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={ <Showcase/> }></Route>
-          <Route path="/apply" element={ <Apply/> }></Route>
-          <Route path="/about" element={ <About/> }></Route>
+          <Route path="/EmpowerWingStudio" element={ <Showcase/> }></Route>
+          <Route path="/EmpowerWingStudio/apply" element={ <Apply/> }></Route>
+          <Route path="/EmpowerWingStudio/about" element={ <About/> }></Route>
 
         </Routes>
       </Router>

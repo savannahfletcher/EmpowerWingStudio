@@ -12,17 +12,17 @@ const Navbar = () => {
             </div>
 
             <div className="links">
-                <Link to="/">
+                <Link to="/EmpowerWingStudio/">
                     <button className="button" role="button">Artist Showcase</button>
                 </Link>
             </div>
             <div className="links">
-                <Link to="/apply">
+                <Link to="/EmpowerWingStudio/apply">
                     <button className="button" role="button">Apply</button>
                 </Link>
             </div>
             <div className="links">
-                <Link to="/about">
+                <Link to="/EmpowerWingStudio/about">
                     <button className="button" role="button">About Us</button>
                 </Link>
             </div>
