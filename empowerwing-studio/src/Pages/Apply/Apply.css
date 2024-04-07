@@ -20,26 +20,32 @@
 }
 
 .apply-item {
-    flex: 1;
-    margin: 10px;
-    padding: 40px;
-    width: 80vw;
-    min-height: 70vh;
-    background-color: #5e3901;
-    border-radius: 24px;
-    display:flex;
-    justify-content: center;
+    background-color: #fcefdc;
+    border: 3px solid #5e3901;
+    border-radius: 30px;
+    box-shadow: #5e3901 8px 8px 1px 1px;
+    font-weight: 600;
+    padding: 20px 45px;
+    width: 65vw;
+    display: flex;
+    justify-content: space-between;
+    margin:10px;
 }
 
 .inner-box {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: #fcefdc;
     border-radius: 24px;
     width: 80vw;
     min-height: 70vh;
     margin: 10px;
+}
+
+.top-text{
+    color: #7CA871;
+    font-weight: 700;
+    margin: 30px;
 }
 
 /* Input box inspired by: https://uiverse.io/kamehame-ha/lovely-fly-87 */

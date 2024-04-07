@@ -52,14 +52,15 @@ const Apply = () => {
     return (
         <div className="apply">
             <header className="apply-header" style={{backgroundImage: `url(${Background})`}}>
-                {/* Update this text once we choose a font */}
-                <p style={{color: '#5e3901', fontWeight: 'bold'}}>
-                    Are you an artist, business owner, or creator looking to gain more exposure? Apply here to be featured on our website!
-                </p>
+                <p></p>
                 <div className='apply-container'>
                     <div className='apply-item'>
                         <div className='inner-box'>
-                            <p></p>
+                            <div className='top-text'>
+                            Are you an artist, business owner, or creator looking to gain more 
+                            exposure? Apply here to be featured on our website!
+                            </div>
+                            {/* <p></p> */}
                             <form onSubmit={handleSubmit}>
                                 <div className="coolinput">
                                     <label htmlFor="name" className="text">Name:</label>
